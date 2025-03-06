@@ -1,14 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import { fileURLToPath } from 'url';
-import { dirname, resolve } from 'path';
 
-// Dynamically calculate path to backend/.env no matter where this file is run from
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-// Load environment variables from backend/.env
-dotenv.config({ path: resolve(__dirname, '../.env') });
+dotenv.config(); // Render will directly use the dashboard environment variables
 
 const uri = process.env.MONGODB_URI;
 
@@ -20,8 +13,8 @@ const connectDB = async () => {
     try {
         const conn = await mongoose.connect(uri, {
             serverSelectionTimeoutMS: 5000,
-            dbName: "hospitalDB",
-            maxPoolSize: 10 // Connection pool limit
+            dbName: "hospitalDB",   // Optional if already part of URI
+            maxPoolSize: 10
         });
 
         console.log(`✅ MongoDB Connected: ${conn.connection.host}`);

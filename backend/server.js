@@ -1,8 +1,8 @@
 import app from "./app.js";
 import dotenv from "dotenv";
 
+dotenv.config();  // No need for path, Render will inject env variables directly
 
-dotenv.config({ path: './.env' });
 const PORT = process.env.PORT || 10000;
 
 app.listen(PORT, () => {
