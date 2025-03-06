@@ -2,7 +2,7 @@ import express from "express";
 import connectDB from "./config/db.js";
 import cors from "cors";
 import doctorRoutes from "./routes/doctorRoutes.js";
-import hospitalRoutes from "./routes/hospitalRoutes.js";
+import hospitalRoutes from "./routes/HospitalRoutes.js";
 import dotenv from "dotenv"; // Added for env vars
 
 // Load environment variables (MUST be before DB connection)
