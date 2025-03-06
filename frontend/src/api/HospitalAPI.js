@@ -1,4 +1,4 @@
-const API_URL = "https://hospitalmanagementsystem-1-sh3i.onrender.com";
+const API_URL = `https://hospitalmanagementsystem-1-sh3i.onrender.com/api/hospitals`;
 
 // Get all hospitals
 export const getAllHospitals = async () => {
