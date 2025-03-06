@@ -1,4 +1,4 @@
-const API_URL = `${import.meta.env.VITE_BACKEND_URL}/api/hospitals`;
+const API_URL = "https://hospitalmanagementsystem-1-sh3i.onrender.com";
 
 // Get all hospitals
 export const getAllHospitals = async () => {
