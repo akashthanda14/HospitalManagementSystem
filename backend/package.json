@@ -1,7 +1,11 @@
 {
     "type": "module",
     "scripts": {
-        "start": "nodemon server.js"
+        "start": "node server.js", 
+        "dev": "nodemon server.js" 
+    },
+    "engines": { 
+        "node": "18.x"
     },
     "devDependencies": {
         "concurrently": "^8.2.2",
