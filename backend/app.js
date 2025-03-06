@@ -17,10 +17,5 @@ app.use(express.json());
 app.use("/api/doctors", doctorRoutes);
 app.use("/api/hospitals", hospitalRoutes);
 
-
-app.get("/",(req,res)=>{
-    res.send("Hospital Management System Running on PORT ",PORT);
-})
-
 export default app;
 
