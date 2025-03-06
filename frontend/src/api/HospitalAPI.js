@@ -1,4 +1,4 @@
-const API_URL = "https://hospitalmanagementsystem-jxrr.onrender.com";
+const API_URL = "http://localhost:3000/api/hospitals";
 
 // Get all hospitals
 export const getAllHospitals = async () => {
